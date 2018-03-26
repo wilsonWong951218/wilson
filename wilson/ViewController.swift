@@ -9,17 +9,50 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    @IBOutlet weak var display: UILabel!
+    var isNoFirstRespond = false
+    @IBAction func toughtDigit(_ sender: UIButton) {
+        let digit = sender.currentTitle!
+        if isNoFirstRespond{
+            
+            let textCurrentlyInDisplay = display.text!
+            display.text = textCurrentlyInDisplay + digit
+        }
+        else {
+            display.text = digit
+            isNoFirstRespond = true
+        }
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    var displayValue : Double {
+        get{
+            return Double(display.text!)!
+        }
+        set{
+            display.text = String(newValue)
+        }
     }
-
-
+    private var brain = calculatorBrain()
+    @IBAction func toughtSymbol(_ sender: UIButton) {
+        if isNoFirstRespond{
+            brain.setOperation(displayValue)
+            isNoFirstRespond = false
+            
+        }
+        if let mathSymbol = sender.currentTitle {
+            brain.perfromOperationg(mathSymbol)
+            if mathSymbol == "C" {
+                displayValue = 0
+                isNoFirstRespond = false
+            }
+        if let result = brain.returnValue{
+            displayValue = result
+        }
+        
+    }
+    
 }
-
+}

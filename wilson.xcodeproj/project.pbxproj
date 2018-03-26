@@ -12,6 +12,7 @@
 		E2E5CB9F1FA0EA1600D0D7F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E5CB9D1FA0EA1600D0D7F1 /* Main.storyboard */; };
 		E2E5CBA11FA0EA1600D0D7F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E5CBA01FA0EA1600D0D7F1 /* Assets.xcassets */; };
 		E2E5CBA41FA0EA1600D0D7F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E5CBA21FA0EA1600D0D7F1 /* LaunchScreen.storyboard */; };
+		E2E5CBAD1FA1851D00D0D7F1 /* calculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5CBAC1FA1851D00D0D7F1 /* calculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E2E5CBA01FA0EA1600D0D7F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2E5CBA31FA0EA1600D0D7F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2E5CBA51FA0EA1600D0D7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E5CBAC1FA1851D00D0D7F1 /* calculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		E2E5CB981FA0EA1600D0D7F1 /* wilson */ = {
 			isa = PBXGroup;
 			children = (
-				E2E5CB991FA0EA1600D0D7F1 /* AppDelegate.swift */,
+				E2E5CBAB1FA0EA6D00D0D7F1 /* New Group */,
 				E2E5CB9B1FA0EA1600D0D7F1 /* ViewController.swift */,
 				E2E5CB9D1FA0EA1600D0D7F1 /* Main.storyboard */,
+				E2E5CBAC1FA1851D00D0D7F1 /* calculatorBrain.swift */,
+			);
+			path = wilson;
+			sourceTree = "<group>";
+		};
+		E2E5CBAB1FA0EA6D00D0D7F1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				E2E5CB991FA0EA1600D0D7F1 /* AppDelegate.swift */,
 				E2E5CBA01FA0EA1600D0D7F1 /* Assets.xcassets */,
 				E2E5CBA21FA0EA1600D0D7F1 /* LaunchScreen.storyboard */,
 				E2E5CBA51FA0EA1600D0D7F1 /* Info.plist */,
 			);
-			path = wilson;
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					E2E5CB951FA0EA1600D0D7F1 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2QCM3V6Y9N;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E5CBAD1FA1851D00D0D7F1 /* calculatorBrain.swift in Sources */,
 				E2E5CB9C1FA0EA1600D0D7F1 /* ViewController.swift in Sources */,
 				E2E5CB9A1FA0EA1600D0D7F1 /* AppDelegate.swift in Sources */,
 			);
@@ -262,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2QCM3V6Y9N;
 				INFOPLIST_FILE = wilson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAT.wilson;
@@ -274,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2QCM3V6Y9N;
 				INFOPLIST_FILE = wilson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAT.wilson;
@@ -301,6 +316,7 @@
 				E2E5CBAA1FA0EA1600D0D7F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
